@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 40rem;
+    height: 42rem;
+    background-color: rgb(217, 217, 217);
+    position: absolute;
+    top : 1.5rem;
+    border-radius: 20px;
+    transition: all 0.7s;
+    border: 2px solid white;
+}
+.container:hover{
+    border-color: black;
+}
+
+.undercontainer{
+    width: 39.8rem;
+    height: 7rem;
+    background-color: rgb(172, 171, 171);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.undercontainer h1{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    padding-top: 0.7rem;
+}
+
+#date{
+    position: absolute;
+    top: 3.8rem;
+}
+
+#limite{
+    position: absolute;
+    top: 5rem;
+    left : 16.5rem;
+    color: rgb(172, 171, 171);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#alerticon{
+    position: absolute;
+    top : 5rem;
+    left : 14.5rem;
+    width: 25px;
+    height: auto;
+    color: rgb(172, 171, 171);
+
+}
+#svg{
+    position: absolute;
+    left: 5rem;
+    top: 8rem;
+    width: 2.5rem;
+    height: auto;
+    border: 4px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.limite-atteinte {
+    border-color: red !important;
+    color: red !important;
+    cursor: not-allowed;
+}
+#svg:hover{
+    border: 4px solid white;
+    color : white;
+}
+#task{
+    position: absolute;
+    left: 8.7rem;
+    top: 8.3rem;
+    font-size: 1.3rem;
+}
+
+.check{
+    display: block;
+    position: relative;
+    left: 5.3rem;
+    top: 4.2rem;
+    margin-top: 0.5rem;
+}
+
+input[type="checkbox"]{
+    width: 2rem;
+    height: 2rem;
+}
+input[type="text"]{
+    position: absolute;
+    left: 2.7rem;
+    height: 2rem;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+    font-family: poppins;
+    font-size: 1.2rem;
+}
+input[type="text"]:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(182, 18, 18);
+}

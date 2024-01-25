@@ -115,3 +115,62 @@ input[type="text"]:focus{
     outline: none;
     border-bottom: 1px solid rgb(182, 18, 18);
 }
+
+/* Ajoutez ces règles pour rendre le site responsive */
+
+/* Pour les écrans de taille moyenne et plus petits */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; /* Ajustez la largeur selon vos besoins */
+    }
+    
+    .undercontainer {
+        height: 8rem; /* Ajuste automatiquement la hauteur */
+        width: 100%;
+        padding: 1rem; /* Ajoutez un espace autour des éléments */
+    }
+    .undercontainer h1 {
+        font-size: 2rem; /* Ajustez la taille de la police pour un écran plus petit */
+    }
+
+    #date, #limite, #alerticon {
+        font-size: 0.8rem; /* Ajustez la taille de la police pour un écran plus petit */
+    }
+
+    #task{
+        position: relative;
+        top: -1.5rem;
+        left: 10rem;
+    }
+    #svg {
+        position: relative; /* Changez à "relative" pour permettre un flux normal sur de petits écrans */
+        left: 7rem;
+        top: 1rem;
+        transform: none;
+        width: 8%; /* Occupe 100% de la largeur du conteneur parent */
+        text-align: center;
+        margin-left: 0; /* Ajustez la marge gauche pour centrer */
+    }
+
+    .check {
+        left: 5%; /* Alignez à gauche pour les écrans plus petits */
+        top: 0rem; /* Ajoutez un espace entre les tâches pour une meilleure lisibilité */
+    }
+    #limite {
+        position: absolute;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem; /* Ajustez la taille de la police pour un écran plus petit */
+    }
+
+    #alerticon {
+        position: absolute;
+        top: 12.3%;
+        left: 34%;
+        transform: translateX(-50%);
+        width: 15px; /* Ajustez la taille de l'icône pour un écran plus petit */
+        height: auto;
+    }
+}
+

@@ -167,7 +167,7 @@ input[type="text"]:focus{
     #alerticon {
         position: absolute;
         top: 12.3%;
-        left: 34%;
+        left: 32%;
         transform: translateX(-50%);
         width: 15px; /* Ajustez la taille de l'icône pour un écran plus petit */
         height: auto;

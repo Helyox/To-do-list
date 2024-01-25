@@ -119,7 +119,7 @@ input[type="text"]:focus{
 /* Ajoutez ces règles pour rendre le site responsive */
 
 /* Pour les écrans de taille moyenne et plus petits */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 414px) {
     .container {
         width: 95%; /* Ajustez la largeur selon vos besoins */
     }
